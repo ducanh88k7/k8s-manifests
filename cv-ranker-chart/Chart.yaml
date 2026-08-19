@@ -1,0 +1,5 @@
+apiVersion: v2
+name: cv-ranker-chart
+description: Helm chart cho CV Ranker AI (FastAPI + pgvector)
+version: 0.1.0
+appVersion: "1.1.0"
