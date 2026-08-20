@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: localhost:5000/cv-ranker-lab
+  repository: local-registry:5000/cv-ranker-lab
   pullPolicy: IfNotPresent
   tag: "v1.1.0"
 
