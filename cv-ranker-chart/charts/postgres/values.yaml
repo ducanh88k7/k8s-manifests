@@ -1,0 +1,19 @@
+replicaCounts: 1
+
+image:
+  repository: pgvector/pgvector
+  tag: "pg16"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 5432
+
+storage: 
+  size: 1Gi
+  accessMode: ReadWriteOnce
+
+env:
+  POSTGRES_DB: cv_ranker_db
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgrespassword

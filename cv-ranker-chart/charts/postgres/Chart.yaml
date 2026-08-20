@@ -1,0 +1,6 @@
+apiVersion: v2
+name: postgres
+description: Subchart cho CSDL Postgres/pgvector (Stateful)
+type: application
+version: 0.1.0
+appVersion: "16.0"

@@ -1,0 +1,6 @@
+apiVersion: v2
+name: api
+description: Subchart cho dịch vụ Backend API CV Ranker (Stateless)
+type: application
+version: 0.1.0
+appVersion: "1.1.0"

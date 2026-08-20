@@ -1,0 +1,22 @@
+replicaCount: 2
+
+image:
+  repository: localhost:5000/cv-ranker-lab
+  pullPolicy: IfNotPresent
+  tag: "v1.1.0"
+
+service:
+  type: ClusterIP
+  port: 8000
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
+env:
+  DB_HOST: "cv-ranker-capstone-postgres"
+  DB_PORT: "5432"
