@@ -1,9 +1,10 @@
 api:
   replicaCount: 2
-  image: 
-    repository: localhost:5000/cv-ranker-lab
+  image:
+    repository: local-registry:5000/cv-ranker-lab
     tag: v1.1.0
+    pullPolicy: IfNotPresent
 
 postgres:
-  storage: 
+  storage:
     size: 1Gi
