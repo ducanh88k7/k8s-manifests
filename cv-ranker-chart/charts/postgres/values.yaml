@@ -1,4 +1,4 @@
-replicaCounts: 1
+replicaCount: 1
 
 image:
   repository: pgvector/pgvector
